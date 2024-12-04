@@ -10,3 +10,9 @@
     max-width: 400px; /*Adjust the width as needed */
     height: auto; /*Maintain aspect ratio*/
 }
+
+.image-caption figcaption {
+    font-style: italic; /* Makes the caption italicized */
+    color: gray; /* Optional: Add a lighter color for captions */
+    margin-top: 5px; /* Space between image and caption */
+}
