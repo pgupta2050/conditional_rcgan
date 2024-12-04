@@ -21,3 +21,6 @@ email: prakhag@clemson.edu
 # Minima social links
 # linkedin_username: prakharkalyangupta
 github_username:  pgupta2050
+
+markdown: kramdown
+mathjax: true
