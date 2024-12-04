@@ -1,9 +1,12 @@
 **Authors**: [Prakhar Gupta](https://www.linkedin.com/in/prakharkalyangupta/), [Mayuresh Bhosale](https://www.linkedin.com/in/mayuresh-bhosale-b6b935136/)
 
-This work is the capstone project for the graduate course CPSC8810: ML for Image Synthesis by Dr. Siyu Huang at Clemson University. 
+**Institution**: Clemson University
+
+**Project Report PDF**: [Report](/assets/files/report.pdf)
+
+**Course Name**: CPSC8810 ML for Image Synthesis, Dr. Siyu Huang
 
 <!-- [About Me](/_pages/about/) -->
-
 
 <h2 style="color: brown; text-align: center;">Motivation & Key Idea</h2>
 
@@ -23,17 +26,15 @@ We ask the following quesiton: **"Can we improve blurring in longer term predict
 
 They use two discriminators - one for image frame reconstruction and one for image sequence temporal consistency. The loss function in the baseline model is given by :
 <p align="center">
-  <img src="assets/images/rcgan_loss.png" alt="loss" width="250"/>
+  <img src="assets/images/rcgan_loss.png" alt="loss" width="350"/>
 </p>
-
-
 
 
 <h3 style="color: blue;"> Optical Flow Conditioned RCGAN</h3>
 
 To restrict pixel movement to realistic areas indirectly, we exploit [RAFT, Teed et al](https://arxiv.org/abs/2003.12039) pre-trained optical flow model to condition generations on optical flow loss. 
 <p align="center">
-  <img src="assets/images/raft_flow.png" alt="kitti_paper" width="500"/>
+  <img src="assets/images/raft_flow.png" alt="kitti_paper" width="550"/>
   <br />
   <em>Figure 2: Optical flow detection perormance on KITTI dataset has been well estbalished by the Teed et al.</em>
 </p>
@@ -41,7 +42,7 @@ To restrict pixel movement to realistic areas indirectly, we exploit [RAFT, Teed
 
 The new loss function is designed as:
 <p align="center">
-  <img src="assets/images/rcgan_flow_loss.png" alt="loss" width="350"/>
+  <img src="assets/images/rcgan_flow_loss.png" alt="loss" width="450"/>
 </p>
 
 
@@ -50,7 +51,7 @@ The new loss function is designed as:
 
 The new loss function is designed as:
 <p align="center">
-  <img src="assets/images/rcgan_kine_loss1.png" alt="loss" width="450"/>
+  <img src="assets/images/rcgan_kine_loss1.png" alt="loss" width="580"/>
 </p>
 
 
@@ -73,7 +74,7 @@ We trained the conditional GAN on KITTI dataset city driving frame sequences of 
 </p>
 
 <p align="center">
-  <img src="assets/images/results_e10_tab.png" alt="loss" width="400"/>
+  <img src="assets/images/results_e10_tab.png" alt="loss" width="350"/>
 </p>
 
 <h3 style="color: blue;">Epoch 30</h3>
@@ -99,7 +100,7 @@ We trained the conditional GAN on KITTI dataset city driving frame sequences of 
 </p>
 
 <p align="center">
-  <img src="assets/images/results_e99_tab.png" alt="loss"  width="400"/>
+  <img src="assets/images/results_e99_tab.png" alt="loss"  width="350"/>
 </p>
 
 
