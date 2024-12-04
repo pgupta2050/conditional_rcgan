@@ -6,17 +6,16 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-
 title: Conditional Retrospective Cylce GAN for Video Prediction
 description: Project carried out for course CPSC8810 - ML for Image Synthesis (Dr. Siyu Huang)
 author: Prakhar Gupta, Mayuresh Bhosale
 email: prakhag@clemson.edu
 
-header_pages:
+# header_pages:
   # - _pages/home.md
 
-include:
-  - _pages
+# include:
+#   - _pages
 
 
 # Minima social links
