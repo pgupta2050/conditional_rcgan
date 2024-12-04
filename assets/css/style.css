@@ -10,3 +10,10 @@
     max-width: 400px; /*Adjust the width as needed */
     height: auto; /*Maintain aspect ratio*/
 }
+
+
+.custom-heading {
+    color: #3498db; /* Blue color */
+    font-weight: bold; /* Optional: Adjust font styling */
+    font-size: medium;
+}

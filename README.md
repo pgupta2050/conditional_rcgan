@@ -23,6 +23,7 @@ They use two discriminators - one for image frame reconstruction and one for ima
   <img src="assets/images/rcgan_loss.png" alt="loss" width="250"/>
 </p>
 
+<h2 class="custom-heading">RCGAN baseline model</h2>
 
 #### Optical Flow Conditioned RCGAN
 To restrict pixel movement to realistic areas indirectly, we exploit [RAFT, Teed et al](https://arxiv.org/abs/2003.12039) pre-trained optical flow model to condition generations on optical flow loss. 
@@ -74,14 +75,12 @@ Epoch 30:
 <p align="center">
   <img src="assets/images/results_e30.png" alt="loss"/>
 </p>
-<p align
 
 Epoch 50:
 
 <p align="center">
   <img src="assets/images/results_e50.png" alt="loss"/>
 </p>
-<p align
 
 
 Epoch 100:
