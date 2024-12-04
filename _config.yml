@@ -13,7 +13,7 @@ author: Prakhar Gupta, Mayuresh Bhosale
 email: prakhag@clemson.edu
 
 header_pages:
-  - _pages/home.md
+  # - _pages/home.md
 
 include:
   - _pages
