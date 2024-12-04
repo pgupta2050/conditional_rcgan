@@ -18,6 +18,9 @@ Kwon et al established great performance compared to the SOTA with their forward
 
 [link to orignaal PDF paper](/assets/files/Kwon_Predicting_Future_Frames_Using_Retrospective_Cycle_GAN_CVPR_2019_paper.pdf)
 
+Euler's formula: $e^{i\pi} + 1 = 0$
+
+
 
 #### RCGAN baseline model
 
