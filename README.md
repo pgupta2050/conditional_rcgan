@@ -5,7 +5,7 @@ This work is the capstone project for the graduate course CPSC8810: ML for Image
 <!-- [About Me](/_pages/about/) -->
 
 
-### Motivation & Key Idea
+<h2 style="color: brown; text-align: center;">Motivation & Key Idea</h2>
 
 We build upon the ideas from [Retrospective Cycle GAN (Kwon et al)](https://openaccess.thecvf.com/content_CVPR_2019/papers/Kwon_Predicting_Future_Frames_Using_Retrospective_Cycle_GAN_CVPR_2019_paper.pdf). They established great performance compared to the SOTA with their forward and backward temporal consistency idea for training the generator. However, they do not consider any conditionong on physics or restrict the movement of pixels expicitly
 <!-- ![kitti_paper](assets/kitti_paper.png) -->
@@ -17,23 +17,25 @@ We build upon the ideas from [Retrospective Cycle GAN (Kwon et al)](https://open
 
 We ask the following quesiton: **"Can we improve blurring in longer term predictions through the use of physics constraints?"**
 
-#### RCGAN baseline model
+<h2 style="color: brown; text-align: center;">Formulation</h2>
+
+<h3 style="color: blue;">RCGAN baseline model</h3>
+
 They use two discriminators - one for image frame reconstruction and one for image sequence temporal consistency. The loss function in the baseline model is given by :
 <p align="center">
   <img src="assets/images/rcgan_loss.png" alt="loss" width="250"/>
 </p>
 
-<h2 class="custom-heading">RCGAN baseline model</h2>
-
-<h2 style="color: blue;">This is a blue heading</h2>
 
 
-#### Optical Flow Conditioned RCGAN
+
+<h3 style="color: blue;"> Optical Flow Conditioned RCGAN</h3>
+
 To restrict pixel movement to realistic areas indirectly, we exploit [RAFT, Teed et al](https://arxiv.org/abs/2003.12039) pre-trained optical flow model to condition generations on optical flow loss. 
 <p align="center">
   <img src="assets/images/raft_flow.png" alt="kitti_paper" width="500"/>
   <br />
-  <em>Optical flow detection perormance on KITTI dataset has been well estbalished by the Teed et al.</em>
+  <em>Figure 2: Optical flow detection perormance on KITTI dataset has been well estbalished by the Teed et al.</em>
 </p>
 
 
@@ -43,7 +45,8 @@ The new loss function is designed as:
 </p>
 
 
-#### Kinematics Constraint Flow Conditioned RCGAN
+<h3 style="color: blue;"> Kinematics Constraint Flow Conditioned RCGAN</h3>
+
 
 The new loss function is designed as:
 <p align="center">
@@ -51,15 +54,15 @@ The new loss function is designed as:
 </p>
 
 
-#### Combined Contstraints Conditioned RCGAN
+<h3 style="color: blue;"> Combined Contstraints Conditioned RCGAN</h3>
 
 
 
-### Project Results
+<h2 style="color: brown; text-align: center;"> Project Results</h2>
 
 We trained the conditional GAN on KITTI dataset city driving frame sequences of length 5. The models were evaluated on ~70 test sequences. Results belows show the performance of 3 models at different training epoch numbers for 2 chosen test sequences
 
-Epoch 10:
+<h3 style="color: blue;">Epoch 10</h3>
 
 <p align="center">
   <img src="assets/images/result_0.png" alt="loss"/>
@@ -73,20 +76,23 @@ Epoch 10:
   <img src="assets/images/results_e10_tab.png" alt="loss" width="400"/>
 </p>
 
-Epoch 30:
+<h3 style="color: blue;">Epoch 30</h3>
 
 <p align="center">
   <img src="assets/images/results_e30.png" alt="loss"/>
 </p>
 
-Epoch 50:
+<h3 style="color: blue;">Epoch 50</h3>
+[ .... ] ...
 
 <p align="center">
   <img src="assets/images/results_e50.png" alt="loss"/>
 </p>
 
 
-Epoch 100:
+<h3 style="color: blue;">Epoch 100</h3>
+
+[ .... ] ...
 
 <p align="center">
   <img src="assets/images/results_e99.png" alt="loss"/>
@@ -96,7 +102,11 @@ Epoch 100:
   <img src="assets/images/results_e99_tab.png" alt="loss"  width="400"/>
 </p>
 
-### Project Insights and Conclusions
+
+
+<h2 style="color: brown; text-align: center;">Project Insights and Conclusions</h2>
+
+[ .... ] ...
 
 <p align="center">
   <img src="assets/images/results_kineExtra.png" alt="loss"/>
