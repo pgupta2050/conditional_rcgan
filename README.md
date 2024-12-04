@@ -25,6 +25,9 @@ They use two discriminators - one for image frame reconstruction and one for ima
 
 <h2 class="custom-heading">RCGAN baseline model</h2>
 
+<h2 style="color: blue;">This is a blue heading</h2>
+
+
 #### Optical Flow Conditioned RCGAN
 To restrict pixel movement to realistic areas indirectly, we exploit [RAFT, Teed et al](https://arxiv.org/abs/2003.12039) pre-trained optical flow model to condition generations on optical flow loss. 
 <p align="center">
