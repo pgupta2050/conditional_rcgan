@@ -42,7 +42,7 @@ To restrict pixel movement to realistic areas indirectly, we exploit [RAFT, Teed
 
 The new loss function is designed as:
 <p align="center">
-  <img src="assets/images/rcgan_flow_loss.png" alt="loss" width="450"/>
+  <img src="assets/images/rcgan_flow_loss.png" alt="loss" width="480"/>
 </p>
 
 
@@ -57,7 +57,9 @@ The new loss function is designed as:
 
 <h3 style="color: blue;"> Combined Contstraints Conditioned RCGAN</h3>
 
-
+<p align="center">
+  <img src="assets/images/rcgan_combo_loss.png" alt="loss" width="390"/>
+</p>
 
 <h2 style="color: brown; text-align: center;"> Project Results</h2>
 
@@ -98,9 +100,13 @@ We trained the conditional GAN on KITTI dataset city driving frame sequences of 
 <p align="center">
   <img src="assets/images/results_e99.png" alt="loss"/>
 </p>
+<p align="center">
+  <img src="assets/images/results_e99_combined.png" alt="loss"  width=""/>
+</p>
+
 
 <p align="center">
-  <img src="assets/images/results_e99_tab.png" alt="loss"  width="350"/>
+  <img src="assets/images/results_e99_tab1.png" alt="loss"  width="400"/>
 </p>
 
 
