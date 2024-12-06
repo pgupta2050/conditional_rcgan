@@ -86,8 +86,7 @@ We trained the conditional GAN on KITTI dataset city driving frame sequences of 
 </p>
 
 <h3 style="color: blue;">Epoch 50</h3>
-[ .... ] ...
-
+At epoch 50 of trianing, the blurring in kinematics conditioned RCGAN is already starting to improve above the baseline and approach-1 models.
 <p align="center">
   <img src="assets/images/results_e50.png" alt="loss"/>
 </p>
@@ -95,7 +94,7 @@ We trained the conditional GAN on KITTI dataset city driving frame sequences of 
 
 <h3 style="color: blue;">Epoch 100</h3>
 
-[ .... ] ...
+Here, the kinematic conditioning approach clearly outperforms all others. We also explore the combined flow and kinemtatics conditioning of GAN. We notice that the expansion of scalar multi variable loss function demands more trianing to improve blurring. But the statistical metric of PSNR, SSIM and MSE are most promising.
 
 <p align="center">
   <img src="assets/images/results_e99.png" alt="loss"/>
@@ -109,12 +108,13 @@ We trained the conditional GAN on KITTI dataset city driving frame sequences of 
   <img src="assets/images/results_e99_tab1.png" alt="loss"  width="400"/>
 </p>
 
+Some more details for different test frames from Kinematics conditioned approach:
+<p align="center">
+  <img src="assets/images/results_kineExtra.png" alt="loss"/>
+</p>
 
 
 <h2 style="color: brown; text-align: center;">Project Insights and Conclusions</h2>
 
-[ .... ] ...
-
-<p align="center">
-  <img src="assets/images/results_kineExtra.png" alt="loss"/>
-</p>
+We develop a conditional GAN model to restrict pixel movements to realistic ones using optical flow or kinematic velocity constraints. This helps reducing some blurring over the baseline model. 
+This is also the first step towards differential eqn based physics conditioning of the GAN model that utilizes object pixel tracking.
