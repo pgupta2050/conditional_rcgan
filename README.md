@@ -2,7 +2,7 @@
 
 **Institution**: Clemson University
 
-**Project Report PDF**: [Report](/assets/files/report.pdf)
+**Project Report**: [Report Paper](/assets/files/report.pdf), [PPT](/assets/files/cond_rcgan.pptx)
 
 **Course Name**: CPSC8810 ML for Image Synthesis, Dr. Siyu Huang
 
